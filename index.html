@@ -16,11 +16,20 @@
   <body>
     <header class="page-header">
       <div class="container navigation">
-        <nav class="page-header__nav nav">
+        
           <a href="./index.html" class="logo ">
             <span >Web</span>Studio</a
           >
-          <ul class="nav__list">
+          <button type="button" class="burger__button " data-menu-button aria-expanded="false" aria-controls="meny-burger">
+           <svg class="burger__icon" width="40"  height="40" aria-label="переключатель мобильного меню">
+             <use class="burger__close" href="./images/icon.svg#close-menu"></use>
+             <use class="burger__open" href="./images/icon.svg#open-menu"></use>
+           </svg>
+         </button>
+         <div class="meny-burger" data-menu id="meny-burger">
+           
+         <nav class="page-header__nav nav"></nav>
+            <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current"
                 >Студия</a
@@ -55,6 +64,9 @@
           </li>
         </ul>
       </div>
+
+      
+        </div>
     </header>
     <main>
       <section class="hero">
@@ -394,7 +406,8 @@
         </div>
       </section>
       <section class="clients">
-        <h2 class="clients__title">Постоянные клиенты</h2>
+        <div class="container">
+          <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients__list ">
           <li class="clients__item">
             <a href="" class="clients__link ">
@@ -445,6 +458,7 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -638,6 +652,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script>
       (() => {
         document
