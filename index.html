@@ -15,22 +15,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container ">
-        <div class="navigation">
-          
+      <div class="container navigation">
+        <nav class="page-header__nav nav">
           <a href="./index.html" class="logo ">
             <span >Web</span>Studio</a
           >
-          <button type="button" class="burger__button " data-menu-button aria-expanded="false" aria-controls="meny-burger">
-           <svg class="burger__icon" width="40"  height="40" aria-label="переключатель мобильного меню">
-             <use class="burger__close" href="./images/icon.svg#close-menu"></use>
-             <use class="burger__open" href="./images/icon.svg#open-menu"></use>
-           </svg>
-         </button>
-         <div class="meny-burger" data-menu id="meny-burger">
-           
-         <nav class="page-header__nav nav">
-            <ul class="nav__list">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current"
                 >Студия</a
@@ -56,7 +46,7 @@
             >
           </li>
           <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--current ">
+            <a href="tel:+380961111111" class="auth-nav__link ">
               <svg class="auth-nav__icon" width="10" height="16">
                 <use href="./images/icon.svg#icon-smartphone"></use>
               </svg>
@@ -64,15 +54,7 @@
             >
           </li>
         </ul>
-        <ul class="meny-burger__list">
-          <li class="meny-burger__item"><a href="" class="meny-burger__link">Instagram</a></li>
-          <li class="meny-burger__item"><a href="" class="meny-burger__link">Twitter</a></li>
-          <li class="meny-burger__item"><a href="" class="meny-burger__link">Facebook</a></li>
-          <li class="meny-burger__item"><a href="" class="meny-burger__link">LinkedIn</a></li>
-        </ul>
-        </div>
       </div>
-       </div>
     </header>
     <main>
       <section class="hero">
@@ -412,8 +394,7 @@
         </div>
       </section>
       <section class="clients">
-        <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
+        <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients__list ">
           <li class="clients__item">
             <a href="" class="clients__link ">
@@ -464,7 +445,6 @@
             </a>
           </li>
         </ul>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -658,7 +638,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
     <script>
       (() => {
         document
