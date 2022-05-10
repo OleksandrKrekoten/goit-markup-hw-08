@@ -1,17 +1,27 @@
 .features {
-    padding-top: 94px;
+    padding-top: 60px;
+    @media screen and (max-width:$desktop) {
+        padding-bottom: 60px;
+    }
+    @media screen and(min-width:$desktop) {
+        padding-top: 94px;
+    }
 }
 
 .features__list {
-    display: flex;
+    display: block;
+    margin: -15px;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 }
 
 .features__items {
-    width: calc((100% - 90px) / 4);
+    margin: 15px;
     
-    &:not(:last-child){
-        margin-right: 30px;
-    }
+   
     &::before{
         display: block;
         content: '';
@@ -21,7 +31,17 @@
         background-size: auto;
         background-repeat: no-repeat;
         background-position: center;}
-    
+        @media screen and( max-width:$tablet){
+            text-align: center;
+            
+        }
+    @media screen and (min-width:$tablet){
+        width: calc((100% - 2 * 30px)/2);
+    }
+    @media screen and (min-width:$desktop) {
+        width: calc((100% - 4 * 30px)/4);
+        
+    }
 }
 
 .icon-antenna::before {background-image: url(../images/antenna.svg);}
@@ -41,6 +61,7 @@
     color: $titleColor;
     margin-top: 0px;
     margin-bottom: 10px;
+   
 }
 .features__description{
     font-size: 14px;
