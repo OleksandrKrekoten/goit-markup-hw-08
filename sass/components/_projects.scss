@@ -1,6 +1,10 @@
 .projects {
-    padding-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+ @media screen and (min-width: $desktop){
+padding-top: 94px;
     padding-bottom: 90px;
+ }
 }
 
 
@@ -8,10 +12,14 @@
     display: flex;
     flex-wrap: wrap;
     
-    padding-bottom: 50px;
+    margin-bottom: 30px;
     @media screen and (min-width:$tablet) {
         justify-content: center;
+        
     }
+        @media screen and (min-width:$desktop){
+margin-bottom: 50px;
+        }
 }
 
 .projects-button__items {
