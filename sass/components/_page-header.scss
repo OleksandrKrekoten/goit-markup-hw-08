@@ -5,19 +5,21 @@ body {
     
 }
 .page-header {
-    display: flex;
-        justify-content: space-between;
-        align-items: center;
+    
+
     width: 100%;
     border-bottom: 1px solid #ececec;
-    min-height: 60px;
     
+
 }
 
 .navigation {
+   
     display: flex;
         justify-content: space-between;
+
         align-items: center;
+       
     
 }
 
@@ -118,7 +120,8 @@ body {
 
 
 .auth-nav__list {
-    @media screen and (max-width: $tablet){
+    
+    @media screen and (max-width: 767px){
         display: none;
         
     }
