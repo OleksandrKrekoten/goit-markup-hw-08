@@ -16,6 +16,7 @@ padding-top: 94px;
     @media screen and (min-width:$tablet) {
         justify-content: center;
         
+        flex-wrap: wrap;
     }
         @media screen and (min-width:$desktop){
 margin-bottom: 50px;
@@ -54,9 +55,11 @@ margin-bottom: 50px;
 
 
 .projects__list {
+    display: flex;
+    flex-direction: column;
     margin: -15px;
     @media screen and (min-width:$tablet) {
-    display: flex;
+    flex-direction: row;
         flex-wrap: wrap;
     }
 }
@@ -95,7 +98,7 @@ margin-bottom: 50px;
     position: absolute;
     
     display: inline-block;
-    content: '';
+    
     width: 100%;
     height: 100%;
     top: 0;
@@ -114,12 +117,17 @@ margin-bottom: 50px;
     top: 0;
     left: 0;
     
-    padding: 63px 24px;
+    padding: 64px 24px;
     
     font-size: 18px;
     line-height: 1.56;
     
     color: #ffffff;
+    @media screen and(max-width: 420px) {
+        padding:20px 20px ;
+        font-size: 16px;
+            line-height: 1.66;
+    }
 }
 
 .projects__content {

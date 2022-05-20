@@ -24,14 +24,16 @@
 }
 
 .team__list {
-    
-    margin: -15px;
-    @media screen and (max-width:767){display: flex;
+    display: flex;
         flex-direction: column;
+    margin: -15px;
+   
+    @media screen and (max-width:767){
+        
         justify-content: center;
         align-items: center;}
     @media screen and (min-width:$tablet){
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     

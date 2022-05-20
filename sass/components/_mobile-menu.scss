@@ -30,6 +30,11 @@
     @media screen and (min-width: $tablet) {
         display: none;
     }
+        @media screen and(max-width: 429px) {
+            padding-bottom: 68px;
+        }
+    
+        
 }
 .mobile-menu.is-open{
     transform: translateX(0);
@@ -66,10 +71,7 @@
 }
 .mobile-contact__list {
 margin-bottom: 64px;
-   
-   
 }
-
 .mobile-contact__item {
     &:not(:last-child){
         margin-bottom: 32px;
@@ -101,12 +103,12 @@ margin-bottom: 64px;
 .mobile-social__list {
     display: flex;
     flex-wrap: wrap;
-   
+
 }
 
 .mobile-social__item {
 
-    text-align: center;
+    
    &:not(:last-child){
        @media screen and (min-width:430px) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);

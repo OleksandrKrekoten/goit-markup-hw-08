@@ -9,10 +9,12 @@
 }
 
 .features__list {
-    display: block;
+    display: flex;
     margin: -15px;
+    flex-direction: column;
+    
     @media screen and (min-width:$tablet) {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         
     }
