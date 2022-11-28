@@ -518,18 +518,18 @@
               </div>
             </li>
             <li class="team__items">
-              <picture>
+                <picture>
                 <source
                   srcset="
                     ./images/team/UIDesigner/webp/UIDesignerDesktop.webp,
                     ./images/team/UIDesigner/webp/UIDesignerDesktop2x.webp 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(max-width:767px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/UIDesigner/webp/UIDesignerTablet.webp,
+                   ./images/team/UIDesigner/webp/UIDesignerTablet.webp,
                     ./images/team/UIDesigner/webp/UIDesignerTablet2x.webp 2x
                   "
                   media="(min-width:768px)"
@@ -541,17 +541,15 @@
                     ./images/team/UIDesigner/webp/UIDesignerMobile.webp,
                     ./images/team/UIDesigner/webp/UIDesignerMobile2x.webp 2x
                   "
-                  media="(max-width:767px)"
+                  media="(min-width:1200px)"
                   type="image/webp"
-                  
                 />
-                
                 <source
                   srcset="
                     ./images/team/UIDesigner/UIDesignerDesktop.jpg,
                     ./images/team/UIDesigner/UIDesignerDesktop2x.jpg 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(max-width:767px)"
                 />
                 <source
                   srcset="
@@ -566,12 +564,10 @@
                     ./images/team/UIDesigner/UIDesignerMobile.jpg,
                     ./images/team/UIDesigner/UIDesignerMobile2x.jpg 2x
                   "
-                  media="(max-width:767px)"
+                  media="(min-width:1200px)"
                 />
-                
-                
                 <img
-                  src="./images/team/UIDesigner/UIDesignerMobile.jpg"
+                  src="./images/team/UIDesigner/webp/UIDesignerDesktop2x.webp"
                   alt="член команды"
                   class="team__image"
                 />
@@ -915,31 +911,6 @@
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
-      })();
-    </script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-newsletter-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
-      })();
-    </script>
+    
   </body>
 </html>
